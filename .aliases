@@ -1,0 +1,15 @@
+alias install="sudo aptitude install -y"
+alias remove="sudo aptitude purge"
+alias search="aptitude search"
+alias update="sudo apt-get update"
+alias upgrade="sudo apt-get upgrade"
+alias c="clear"
+alias ginit="git init"
+alias gst="git status"
+alias gra="git remote add"
+alias gad="git add -A"
+alias gcm="git commit -a -m"
+alias gpu="git push"
+alias gcl="git clone"
+
+
