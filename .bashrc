@@ -15,7 +15,7 @@ if [ -f ~/.bash_ghelp ]; then
     . ~/.bash_ghelp
 fi
 
-if [ "$intromsg" = yes]; then
+if [ "$intromsg" = yes ]; then
     lred='\e[1;31m'
     yellow='\e[1;33m'
     noco='\e[0m'

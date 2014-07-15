@@ -3,7 +3,7 @@ function ghelp(){
 	echo -e "${noco}gst = git status = status of git repository                                               "
 	echo -e "${noco}gra <origin> <git link> = git remote add <origin> <git link> = add new remote             "
 	echo -e "${noco}gad = git add = add files                                                   		  "
-	echo -e "${noco}gcm ["message"] = git commit -a -m ["message"] = commit all changed files                 "
+	echo -e "${noco}gcm ["message"] = git commit -m ["message"] = commit changed files                 	  "
 	echo -e "${noco}gpu <origin> <branch> = git push <origin> <branch> = push changes to remote               "
 	echo -e "${noco}gcl = git clone = clone repository                                                        "
 	#echo -e "${noco}                                            "

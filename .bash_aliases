@@ -8,7 +8,7 @@ alias ginit="git init"
 alias gst="git status"
 alias gra="git remote add"
 alias gad="git add"
-alias gcm="git commit -a -m"
+alias gcm="git commit -m"
 alias gpu="git push"
 alias gcl="git clone"
 
