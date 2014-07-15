@@ -3,6 +3,7 @@
 # for examples
 
 #Configs
+intromsg=yes
 ghelp=yes
 
 #Import ext. files
@@ -14,17 +15,19 @@ if [ -f ~/.bash_ghelp ]; then
     . ~/.bash_ghelp
 fi
 
-lred='\e[1;31m'
-yellow='\e[1;33m'
-noco='\e[0m'
-echo -e "${lred}================================================================================"
-echo -e "${lred}=                         Welcome ${yellow}$USER@$HOSTNAME${lred}!                         ="
-echo -e "${lred}================================================================================${noco}"
-if [ "$ghelp" = yes ]; then
+if [ "$intromsg" = yes]; then
+    lred='\e[1;31m'
+    yellow='\e[1;33m'
+    noco='\e[0m'
+    echo -e "${lred}================================================================================"
+    echo -e "${lred}=                         Welcome ${yellow}$USER@$HOSTNAME${lred}!                         ="
+    echo -e "${lred}================================================================================${noco}"
+    if [ "$ghelp" = yes ]; then
 	ghelp
 	echo -e "${lred}================================================================================${noco}"
+    fi
+    unset lred yellow noco
 fi
-unset lred yellow noco
 
 # If not running interactively, don't do anything
 case $- in
